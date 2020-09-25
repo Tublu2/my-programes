@@ -9,8 +9,8 @@ int main()
  scanf("%d %d ",&i,&j);
  switch(operator)
   {        
-     if( ("+,-,*,/"))      
-       {
+     if( ("+,-,*,/"))      //--------------------------remove this if. not needed
+       {                   //  remove this line
         case '+':
       	printf("%d + %d = %d",i,j,i+j); break;
  	case '-':
@@ -19,10 +19,11 @@ int main()
      	printf("%d * %d = %d",i,j,i*j); break;
  	case '/':
      	printf("%d / %d = %d",i,j,i/j); break;
+                          // -----------------------putthis here-> case 'e': return 0;
        }
-      else
-         {
-           printf("to exit press value = %d ",e);
-         }
+//       else
+//          {
+//            printf("to exit press value = %d ",e);
+//          }
 }
 }
