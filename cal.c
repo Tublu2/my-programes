@@ -8,20 +8,20 @@ int main()
   
  printf("enter the operator (+,-,*,/,e)");
  operator=getchar(); // better then scanning using scanf("%c",&operator);
- printf("enter two numbers ");
+ printf("enter two numbers for %c",operator);
  scanf("%d %d ",&i,&j);
-  
+  printf("entered %d & %d",i,j);
     switch(operator)
        {   
         case '+':
       	printf("%d + %d = %d",i,j,i+j); break;
- 	case '-':
+ 	      case '-':
      	printf("%d - %d = %d",i,j,i-j); break;
- 	case '*':
+ 	      case '*':
      	printf("%d * %d = %d",i,j,i*j); break;
- 	case '/':
+ 	      case '/':
      	printf("%d / %d = %d",i,j,i/j); break;
-    case 'e': return 0; //Loop breaks and program exits here
+        case 'e': return 0; //Loop breaks and program exits here
        }  
  }
  return 0;
