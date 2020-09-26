@@ -3,13 +3,14 @@ int main()
 {
  char operator;
  int i,j, e=0;
+ 
+ while(1) {     // Infinite loop
+  
  printf("enter the operator (+,-,*,/,e)");
  operator=getchar(); // better then scanning using scanf("%c",&operator);
  printf("enter two numbers ");
  scanf("%d %d ",&i,&j);
- 
- while(1) {     // Infinite loop
- 
+  
     switch(operator)
        {   
         case '+':
