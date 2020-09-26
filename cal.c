@@ -17,8 +17,7 @@ int main()
      	printf("%d * %d = %d",i,j,i*j); break;
  	case '/':
      	printf("%d / %d = %d",i,j,i/j); break;
-    case 'e': return 0;
+        case 'e': return 0;
        }                    
-       // Put case 'e': here
-}
+ return 0;
 }
