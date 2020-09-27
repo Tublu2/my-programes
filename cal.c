@@ -3,26 +3,30 @@ int main()
 {
  char operator;
  int i,j, e=0;
- 
- while(1) {     // Infinite loop
   
- printf("enter the operator (+,-,*,/,e)");
- operator=getchar(); // better then scanning using scanf("%c",&operator);
- printf("enter two numbers for %c",operator);
- scanf("%d %d ",&i,&j);
-  printf("entered %d & %d",i,j);
-    switch(operator)
-       {   
-        case '+':
-      	printf("%d + %d = %d",i,j,i+j); break;
- 	      case '-':
-     	printf("%d - %d = %d",i,j,i-j); break;
- 	      case '*':
-     	printf("%d * %d = %d",i,j,i*j); break;
- 	      case '/':
-     	printf("%d / %d = %d",i,j,i/j); break;
-        case 'e': return 0; //Loop breaks and program exits here
-       }  
- }
+ printf("\nEnter the operator (+,-,*,/,e) :-");
+ scanf("%c",&operator);
+
+ switch(operator)
+ {  
+	case '+':
+		printf("\nEnter two numbers for %c :\n",operator);
+		scanf("%d%d",&i,&j);
+		printf("%d + %d = %d",i,j,i+j); break;
+	case '-':
+		printf("\nEnter two numbers for %c :\n",operator);
+		scanf("%d%d",&i,&j);
+		printf("%d - %d = %d",i,j,i-j); break;
+	case '*':
+		printf("\nEnter two numbers for %c :\n",operator);
+		scanf("%d%d",&i,&j);
+		printf("%d * %d = %d",i,j,i*j); break;
+	case '/':
+		printf("\nEnter two numbers for %c :\n",operator);
+		scanf("%d%d",&i,&j);
+		printf("%d / %d = %d",i,j,i/j); break;
+	default:	//-----------------------> This gets executed when any invalide operator is entered other than +,-,*,/
+		printf("Wrong option");	
+ }  
  return 0;
 }
