@@ -17,7 +17,7 @@ int main()
 		case 3:operator='*';break;
 		case 4:operator='/';break;
 		case 5:printf("\nExiting program\n");return 0;
-		default:
+		default:  //-----------------------> This gets executed when any invalide integer is entered other than 1,2,3,4,5
 			printf("Wrong Option! Enter again");
 			continue;   //----------------------> this line skips code and goes back to line no 7, begining of while(1)
 	 }
