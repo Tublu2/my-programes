@@ -1,0 +1,5 @@
+#!/bin/bash
+cd ..
+rm my-programes
+git clone https://github.com/Tublu2/my-programes.git
+cd my-programes
